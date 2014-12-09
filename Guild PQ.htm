@@ -1,0 +1,290 @@
+
+<script language=JavaScript>
+<!--
+
+//Disable right click script III- By Renigade (renigade@mediaone.net)
+//For full source code, visit http://www.dynamicdrive.com
+
+var message="";
+///////////////////////////////////
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if 
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2||e.which==3) {(message);return false;}}}
+if (document.layers) 
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+
+document.oncontextmenu=new Function("return false")
+// --> 
+</script>
+
+<script src="rainbow.js">
+
+/*
+Rainbow Links Script- TAKANASHI Mizuki
+For full source code, 100's more DHTML scripts, and TOS, 
+Visit http://www.dynamicdrive.com
+*/
+
+</script>
+
+
+<html>
+<head><noframes></noframes><noscript></noscript><!-- --><script type="text/javascript" src="http://static.websimages.com/static/global/js/webs/usersites/p.js"></script><script type="text/javascript" src="http://static.websimages.com/static/global/js/webs/usersites/escort.js"></script><script type="text/javascript">if(typeof(urchinTracker)=='function'){_uacct="UA-230305-2";_udn="none";_uff=false;urchinTracker();}</script>
+<title>
+SacredHeros
+</title>
+
+<script language='javascript'>
+  if (top.location != location) {
+    top.location.href = document.location.href ;
+  }
+</script>
+
+</head>
+<body marginwidth=0 marginheight=0 topmargin=0 leftmargin=0>
+<style>
+body{background:#000000;scrollbar-face-color:black;scrollbar-shadow-color:#C793F7;scrollbar-highlight-color:#FF6600;scrollbar-3dlight-color:#C793F7;scrollbar-darkshadow-color:#C793F7;scrollbar-track-color:#000000;scrollbar-arrow-color:#C793F7}
+</style>
+
+
+<center><table width=480 border=1>
+<tr><td colspan=3 align=center>
+<center><img src="http://img232.imageshack.us/img232/6745/sacredherosoq5.gif"></td></table>
+
+
+<style type="text/css">
+<!--
+.style21 {color: #000000}
+-->
+</style>
+<!-- InstanceEndEditable -->
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+<style type="text/css">
+<!--
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+
+
+
+}
+.style17 {font-size: 12px}
+-->
+</style></head>
+
+<body>
+<div align="center">
+  <table width="784" border="0" cellpadding="0" bordercolor="#000000" bgcolor="#000000">
+    <tr bgcolor="#000000">
+      <td colspan="2">
+      </object></td>
+    </tr>
+    <tr>
+ <td width="475" bgcolor="#000000"><div align="left">
+<script type="text/javascript">
+
+/***********************************************
+* Scrollable Menu Links- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* Visit http://www.dynamicDrive.com for hundreds of DHTML scripts
+* This notice must stay intact for legal use
+***********************************************/
+
+//configure path for left and right arrows
+var goleftimage='pointer2.gif'
+var gorightimage='pointer.gif'
+//configure menu width (in px):
+var menuwidth=300
+//configure menu height (in px):
+var menuheight=25
+//Specify scroll buttons directions ("normal" or "reverse"):
+var scrolldir="normal"
+//configure scroll speed (1-10), where larger is faster
+var scrollspeed=6
+//specify menu content
+var menucontents='<nobr><font color="gold"><a href="http://www.freewebs.com/sacred_heros/index.htm">Home</a> | <a href="http://www.freewebs.com/sacred_heros/A%20Maple%20Love%20Story.htm">Maple Love Story</a> | <a href="http://www.freewebs.com/sacred_heros/Recruitment.htm">Recruitment</a> | <a href="http://www.freewebs.com/sacred_heros/Events.htm">Guild Events</a> | <a href="http://www.freewebs.com/sacred_heros/Guild%20PQ.htm">Guild Pq Info</a> | <a href="http://www.freewebs.com/sacred_heros/Scripts.htm">The Love Saga Scripts</a> </font></nobr>'
+
+
+////NO NEED TO EDIT BELOW THIS LINE////////////
+
+var iedom=document.all||document.getElementById
+var leftdircode='onMouseover="moveleft()" onMouseout="clearTimeout(lefttime)"'
+var rightdircode='onMouseover="moveright()" onMouseout="clearTimeout(righttime)"'
+if (scrolldir=="reverse"){
+var tempswap=leftdircode
+leftdircode=rightdircode
+rightdircode=tempswap
+}
+if (iedom)
+document.write('<span id="temp" style="visibility:hidden;position:absolute;top:-100;left:-5000">'+menucontents+'</span>')
+var actualwidth=''
+var cross_scroll, ns_scroll
+var loadedyes=0
+function fillup(){
+if (iedom){
+cross_scroll=document.getElementById? document.getElementById("test2") : document.all.test2
+cross_scroll.innerHTML=menucontents
+actualwidth=document.all? cross_scroll.offsetWidth : document.getElementById("temp").offsetWidth
+}
+else if (document.layers){
+ns_scroll=document.ns_scrollmenu.document.ns_scrollmenu2
+ns_scroll.document.write(menucontents)
+ns_scroll.document.close()
+actualwidth=ns_scroll.document.width
+}
+loadedyes=1
+}
+window.onload=fillup
+
+function moveleft(){
+if (loadedyes){
+if (iedom&&parseInt(cross_scroll.style.left)>(menuwidth-actualwidth)){
+cross_scroll.style.left=parseInt(cross_scroll.style.left)-scrollspeed+"px"
+}
+else if (document.layers&&ns_scroll.left>(menuwidth-actualwidth))
+ns_scroll.left-=scrollspeed
+}
+lefttime=setTimeout("moveleft()",50)
+}
+
+function moveright(){
+if (loadedyes){
+if (iedom&&parseInt(cross_scroll.style.left)<0)
+cross_scroll.style.left=parseInt(cross_scroll.style.left)+scrollspeed+"px"
+else if (document.layers&&ns_scroll.left<0)
+ns_scroll.left+=scrollspeed
+}
+righttime=setTimeout("moveright()",50)
+}
+
+
+if (iedom||document.layers){
+with (document){
+write('<table border="0" cellspacing="0" cellpadding="2">')
+write('<td valign="middle"><a href="#" '+leftdircode+'><img src="'+goleftimage+'"border=0></a> </td>')
+write('<td width="'+menuwidth+'px" valign="top">')
+if (iedom){
+write('<div style="position:relative;width:'+menuwidth+'px;height:'+menuheight+'px;overflow:hidden;">')
+write('<div id="test2" style="position:absolute;left:0;top:0">')
+write('</div></div>')
+}
+else if (document.layers){
+write('<ilayer width='+menuwidth+' height='+menuheight+' name="ns_scrollmenu">')
+write('<layer name="ns_scrollmenu2" left=0 top=0></layer></ilayer>')
+}
+write('</td>')
+write('<td valign="middle"> <a href="#" '+rightdircode+'>')
+write('<img src="'+gorightimage+'"border=0></a>')
+write('</td></table>')
+}
+}
+
+</script></div></td>
+
+
+      <td width="303" bgcolor="#000000"><div align="right"><Span class="TopLinks"><font color="Red"><img src=" http://img80.imageshack.us/img80/4486/markanimal0000200315ru0.png">SacredHeros<img src=" http://img80.imageshack.us/img80/4486/markanimal0000200315ru0.png"></font></Span></div></td>
+    </tr>
+  </table>
+  <table width="784" border="0" cellpadding="0">
+    <tr>
+      <td><table width="100%"  border="0" cellpadding="0" bgcolor="#FFFFFF">
+        <tr>
+          <td width="78%" valign="top"><!-- InstanceBeginEditable name="Body" -->
+            <div align="left">
+              <p class="style10">
+<font color="blue" size="5"><u>Guild PQ Info</u></font></font><br>
+"We have been using Mesos, but I have thought of some replacement Marks until Chrismas comes. Let me Explain. WIthin the Excavation Site Camp Area that is within Perion there are a few monsters that you meet getting to the Camp. Well, the items that they maining Drop like the Ghost Stump for Ex drops Seedling. As you know the Ghost Stump is the weakest Monster in the Excavation Site Camp Area. The Seedling would stand for #1. The other monsters' drops would be the same but the # would go up. The Wooden Board that comes from the Wooden Mask would be # 2 and the Slate that comes from the Rocky Mask would be #3 and so on until it gets to #6 just like the part of the GPQ with the Lion for the last part with 6.
+<br>
+<b>Here is a Chart on how it would go.</b>
+<br>
+<img src="http://img.photobucket.com/albums/v676/SephiDraphamon/Guild%20Webbie/leftover183.gif" alt="#1 Seedling">
+<br>
+#1 Seedling, 
+<br>
+<img src="http://img.photobucket.com/albums/v676/SephiDraphamon/Guild%20Webbie/leftover184.gif" alt="#2 Wooden Board">
+<br>
+#2 Wooden Board,
+<br>
+<img src="http://img.photobucket.com/albums/v676/SephiDraphamon/Guild%20Webbie/leftover185.gif" alt="#3 Slate">
+<br>
+#3 Slate, 
+<br>
+<img src="http://img.photobucket.com/albums/v676/SephiDraphamon/Guild%20Webbie/leftover186.gif" alt="#4 Skeledog's Bone">
+<br>
+#4 Skeledog's Bone,
+<br>
+<img src="http://img.photobucket.com/albums/v676/SephiDraphamon/Guild%20Webbie/leftover187.gif" alt="#5 Dirty Bandage">
+<br>
+#5 Dirty Bandage,
+<br>
+<img src="http://img.photobucket.com/albums/v676/SephiDraphamon/Guild%20Webbie/leftover188.gif" alt="#6 Rib">
+<br>
+#6 Rib. 
+<p>
+You would only need to drop one for one stone but you drop the item that is after the last to be drop. So for an Example, the stone that is first to glow you would drop the Seedling and so on.
+<br>
+After every step is done, like say we get the first one right, we pick the items up so we don't lose them. After we get done with all three stages (tests) to get inside, return the marks to me, Taigo (TaigoShadow). When it is Chrismas, the items will be replaced with real #'s, but until then these will be the replacements for those items soon to come."
+<p>
+- Taigo (TaigoShadow)
+<p>
+Note: This 'guide' is credited to Taigo (TaigoShadow). Thank you, Taigo for making this.
+
+
+
+
+              </div>
+
+            <table width="100%"  border="0" cellpadding="0">
+              <tr>
+                <td width="33%"><div align="center">               </tr>
+            </table>
+            <br>
+        </tr>
+
+      </table></td>
+    </tr>
+  </table>
+    </tr>
+
+
+  </table>
+<table width="784" border="0" cellpadding="0" bordercolor="#000000" bgcolor="#000000">
+    <tr bgcolor="#000000">
+      <td colspan="2">
+      </object></td>
+    </tr>
+    <tr>
+
+     <center><td width="784" bgcolor="#000000"><div align="center"><font color="white"><Span class="TopLinks"><marquee behavior="alternate"><marquee width=100>©2007 SacredHeros, the Scanian MapleStory Guild. All rights reserved. :)</font></marquee></Span></div></td></center> </tr>
+  </table>
+
+</div>
+
+</body>
+
+
+<style>a{color:gold;font:10pt Comic Sans MS;text-decoration:none}</style>
+<style>body{background:url(http://img267.imageshack.us/img267/1633/sacredherosii0.png) fixed no-repeat center}</style>
+<style>u{color:red;font:14pt Comic Sans MS}</style>
+
+
+
+
+
+

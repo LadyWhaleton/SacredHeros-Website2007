@@ -1,0 +1,579 @@
+
+<script language=JavaScript>
+<!--
+
+//Disable right click script III- By Renigade (renigade@mediaone.net)
+//For full source code, visit http://www.dynamicdrive.com
+
+var message="";
+///////////////////////////////////
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if 
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2||e.which==3) {(message);return false;}}}
+if (document.layers) 
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+
+document.oncontextmenu=new Function("return false")
+// --> 
+</script>
+
+<script src="rainbow.js">
+
+/*
+Rainbow Links Script- TAKANASHI Mizuki
+For full source code, 100's more DHTML scripts, and TOS, 
+Visit http://www.dynamicdrive.com
+*/
+
+</script>
+
+<html>
+<head><noframes></noframes><noscript></noscript><!-- --><script type="text/javascript" src="http://static.websimages.com/static/global/js/webs/usersites/p.js"></script><script type="text/javascript" src="http://static.websimages.com/static/global/js/webs/usersites/escort.js"></script><script type="text/javascript">if(typeof(urchinTracker)=='function'){_uacct="UA-230305-2";_udn="none";_uff=false;urchinTracker();}</script>
+<title>
+SacredHeros
+</title>
+
+<script language='javascript'>
+  if (top.location != location) {
+    top.location.href = document.location.href ;
+  }
+</script>
+
+</head>
+<body marginwidth=0 marginheight=0 topmargin=0 leftmargin=0>
+<style>
+body{background:#000000;scrollbar-face-color:black;scrollbar-shadow-color:#C793F7;scrollbar-highlight-color:#FF6600;scrollbar-3dlight-color:#C793F7;scrollbar-darkshadow-color:#C793F7;scrollbar-track-color:#000000;scrollbar-arrow-color:#C793F7}
+</style>
+
+
+<center><table width=480 border=1>
+<tr><td colspan=3 align=center>
+<center><img src="http://img232.imageshack.us/img232/6745/sacredherosoq5.gif"></td></table>
+
+
+<style type="text/css">
+<!--
+.style21 {color: #000000}
+-->
+</style>
+<!-- InstanceEndEditable -->
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+<style type="text/css">
+<!--
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+
+
+
+}
+.style17 {font-size: 12px}
+-->
+</style></head>
+
+<body>
+<div align="center">
+  <table width="784" border="0" cellpadding="0" bordercolor="#000000" bgcolor="#000000">
+    <tr bgcolor="#000000">
+      <td colspan="2">
+      </object></td>
+    </tr>
+    <tr>
+ <td width="475" bgcolor="#000000"><div align="left">
+<script type="text/javascript">
+
+/***********************************************
+* Scrollable Menu Links- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* Visit http://www.dynamicDrive.com for hundreds of DHTML scripts
+* This notice must stay intact for legal use
+***********************************************/
+
+//configure path for left and right arrows
+var goleftimage='pointer2.gif'
+var gorightimage='pointer.gif'
+//configure menu width (in px):
+var menuwidth=300
+//configure menu height (in px):
+var menuheight=25
+//Specify scroll buttons directions ("normal" or "reverse"):
+var scrolldir="normal"
+//configure scroll speed (1-10), where larger is faster
+var scrollspeed=6
+//specify menu content
+var menucontents='<nobr><font color="gold"><a href="http://www.freewebs.com/sacred_heros/index.htm">Home</a> | <a href="http://www.freewebs.com/sacred_heros/A%20Maple%20Love%20Story.htm">Maple Love Story</a> | <a href="http://www.freewebs.com/sacred_heros/Recruitment.htm">Recruitment</a> | <a href="http://www.freewebs.com/sacred_heros/Events.htm">Guild Events</a> | <a href="http://www.freewebs.com/sacred_heros/Guild%20PQ.htm">Guild Pq Info</a> | <a href="http://www.freewebs.com/sacred_heros/Scripts.htm">The Love Saga Scripts</a> </font></nobr>'
+
+
+////NO NEED TO EDIT BELOW THIS LINE////////////
+
+var iedom=document.all||document.getElementById
+var leftdircode='onMouseover="moveleft()" onMouseout="clearTimeout(lefttime)"'
+var rightdircode='onMouseover="moveright()" onMouseout="clearTimeout(righttime)"'
+if (scrolldir=="reverse"){
+var tempswap=leftdircode
+leftdircode=rightdircode
+rightdircode=tempswap
+}
+if (iedom)
+document.write('<span id="temp" style="visibility:hidden;position:absolute;top:-100;left:-5000">'+menucontents+'</span>')
+var actualwidth=''
+var cross_scroll, ns_scroll
+var loadedyes=0
+function fillup(){
+if (iedom){
+cross_scroll=document.getElementById? document.getElementById("test2") : document.all.test2
+cross_scroll.innerHTML=menucontents
+actualwidth=document.all? cross_scroll.offsetWidth : document.getElementById("temp").offsetWidth
+}
+else if (document.layers){
+ns_scroll=document.ns_scrollmenu.document.ns_scrollmenu2
+ns_scroll.document.write(menucontents)
+ns_scroll.document.close()
+actualwidth=ns_scroll.document.width
+}
+loadedyes=1
+}
+window.onload=fillup
+
+function moveleft(){
+if (loadedyes){
+if (iedom&&parseInt(cross_scroll.style.left)>(menuwidth-actualwidth)){
+cross_scroll.style.left=parseInt(cross_scroll.style.left)-scrollspeed+"px"
+}
+else if (document.layers&&ns_scroll.left>(menuwidth-actualwidth))
+ns_scroll.left-=scrollspeed
+}
+lefttime=setTimeout("moveleft()",50)
+}
+
+function moveright(){
+if (loadedyes){
+if (iedom&&parseInt(cross_scroll.style.left)<0)
+cross_scroll.style.left=parseInt(cross_scroll.style.left)+scrollspeed+"px"
+else if (document.layers&&ns_scroll.left<0)
+ns_scroll.left+=scrollspeed
+}
+righttime=setTimeout("moveright()",50)
+}
+
+
+if (iedom||document.layers){
+with (document){
+write('<table border="0" cellspacing="0" cellpadding="2">')
+write('<td valign="middle"><a href="#" '+leftdircode+'><img src="'+goleftimage+'"border=0></a> </td>')
+write('<td width="'+menuwidth+'px" valign="top">')
+if (iedom){
+write('<div style="position:relative;width:'+menuwidth+'px;height:'+menuheight+'px;overflow:hidden;">')
+write('<div id="test2" style="position:absolute;left:0;top:0">')
+write('</div></div>')
+}
+else if (document.layers){
+write('<ilayer width='+menuwidth+' height='+menuheight+' name="ns_scrollmenu">')
+write('<layer name="ns_scrollmenu2" left=0 top=0></layer></ilayer>')
+}
+write('</td>')
+write('<td valign="middle"> <a href="#" '+rightdircode+'>')
+write('<img src="'+gorightimage+'"border=0></a>')
+write('</td></table>')
+}
+}
+
+</script></div></td>
+
+
+
+
+
+      <td width="303" bgcolor="#000000"><div align="right"><Span class="TopLinks"><font color="Red"><img src=" http://img80.imageshack.us/img80/4486/markanimal0000200315ru0.png">SacredHeros<img src=" http://img80.imageshack.us/img80/4486/markanimal0000200315ru0.png"></font></Span></div></td>
+    </tr>
+  </table>
+  <table width="784" border="0" cellpadding="0">
+    <tr>
+      <td><table width="100%"  border="0" cellpadding="0" bgcolor="#FFFFFF">
+        <tr>
+          <td width="78%" valign="top"><!-- InstanceBeginEditable name="Body" -->
+            <div align="left">
+              <p class="style10"><br>
+<center><img src="http://img.photobucket.com/albums/v676/SephiDraphamon/Guild%20Webbie/TheLoveSaga.jpg"></center>
+<br>
+<b>Chapter Two</b>
+<p>
+       A complete stranger, dressed in a blue sauna robe, frowned at the sight of the fallen boy. The stranger had black hair, wore snowboard shoes, and wielded a shield and a staff.  “My gosh, what a mess here. Poor kid, he would’ve been killed if I wasn’t here.” The stranger had forgotten something: he had left his guard down after mistakenly thinking he already defeated his enemy. “Ah!”
+<br>
+       “Don’t think you’re getting away that easily!” The second pursuer gave the stranger a small wound. The chaser looked at the first pursuer, who had been knocked out cold, then at the third and gave the third a nod. “Seize the girl.”
+<br>
+       The stranger had a plan and the second pursuer had already fallen into his trap. “Should I introduce myself? Just simply call me Shadow and you’ll see why.” Shadow grinned and disappeared, then reappeared behind the second follower. “Good night,” Shadow said, giving the second pursuer a stiff blow on the temple. Shadow had spared those two since he was already exhausted and worn out; he wasn’t done, yet. He had the last one to take care of.
+<br>
+       The third one was getting away and Shadow was far behind.
+<br>
+       “I’ll let my buddy take care of this one,” Shadow took a seat, and his nurse, who was a medical expert, came from thin air. “How bad is this wound?”
+<br>
+       “Hmmm...” She muttered, thinking.
+<br>
+       “My bad, I almost forgot about that boy over there.”
+<br>
+       “I will tend both of you, if you don’t mind.”
+<br>
+       “Of course. My gratitude, but first, I need to take care of something. My buddy might need my help.”
+<br>
+       “No, no. It will be quick. Just take a pill and everything will be fine. As for the boy, I will need to check how severe his wounds are.”
+<br>
+       “Alright, thanks, anyway. I should go before it’s too late.” And then, Shadow disappeared.
+<p>
+*                *                 *
+<p>
+       “Whoa, easy there, my friend,” Shadow said, taking one step backwards.
+<br>
+       “Lassie, chill,” Shadow’s friend grumbled. “Oh, Shadow, I almost forgot. The one running away with this lady fled as soon as I threatened to kill him or her. Made my day.”
+<br>
+       “Let me go! I had enough of this! Stupid people hunting me!” She hollered, struggling to get free.
+<br>
+       “Justin,” Shadow nodded.
+<br>
+       Justin loosened his grip. “And I wonder why they were chasing her…She doesn’t seem that special.”
+<br>
+       The girl started to spring for her freedom until Shadow stepped in her way. “Don’t even try…you got a pretty bad gash there, girl.”
+<br>
+       The girl tried to mutter something but nothing came out. She fainted and the boys looked at each other.
+       Shadow almost laughed but held it back.
+<p>
+*                *                 *
+<p>
+       “Nap time’s over, kid,” Shadow groaned. “You slept enough.”
+<br>
+       Flipper awoke with a start. He was on the bed. “Who are you and what do you want?!”
+<br>
+       “Haha, chill, kid. Don’t worry about me, I rescued you so don’t treat me like that. Otherwise, you would’ve been murdered,” Shadow shrugged.
+<br>
+       “How did you fine me?” 
+<br>
+       “Simple, I was patrolling Henesys, like how I find other people.”
+<br>
+       “Why?”
+<br>
+       “None of your business.”
+<br>
+       Flipper sighed. 
+<br>
+       Shadow gave a friendly smile, “Your name?”
+<br>
+       “Flipper.”
+<br>
+       The nurse entered the house and beamed, “That’s good that he’s awake. Make sure he doesn’t do anything stupid, Shadow. Of course, you know that. I’ll check on the lass.”
+<br>
+       “Thanks again, Luna. I wouldn’t be here without your magical abilities.”
+<br>
+       Luna, the nurse, replied. “Oh, it’s nothing. Just my job.” Then, she went off to do her bidding.
+<br>
+       Shadow turned back to Flipper. “Where was I? Oh, that’s right. Your name is Flipper. Nice to meet you Flipper, we haven’t seen each other since when? Forget it, it’s been a while. How are you?”
+<br>
+       “You know me?”
+<br>
+       “Don’t be silly, of course I do. Or have you already forgotten me?”
+<br>
+       Flipper felt humiliated; he couldn’t even remember Shadow, who claimed to be his friend. And so, he lied, “My bad. I wasn’t paying attention, I guess. Of course, I still remember you after all these years.”
+<br>
+       “I don’t think so. I sense a lie. So I guess it’s true, you don’t remember me…The friend who has been your friend since we were little kids,” Shadow turned away. “Best friends ever since…”
+<br>
+       “I-I’m sorry.”
+<br>
+       “There’s nothing to be sorry about.”
+<br>
+       Flipper was disappointed in himself. How could he forget a childhood friend who was four years older than him? There were no memories of Shadow, nothing. Zip, zero. Flipper couldn’t even recall what had happened four years ago.
+<br>
+       “One day, I came to your house just to pay a visit. I notice that it was burned down,” Shadow’s voice was low.
+<br>
+       Flipper began to remember an event…an event that terrified him so much he could kill himself. A fire...a fire had killed his sister. His sister. What was her name? He had remembered it before but now, he had lost it.
+<br>
+       Shadow continued his story. “I went inside, but no one was there. I thought you just moved and that the house was burned down since we needed more land, but I was wrong. I knew you would inform me, but you never did until a letter was sent to me a couple years later.”
+<br>
+       “A letter?” Flipper was startled. “I never sent you one. I never—”
+<br>
+       “Oh, but you did, or I should say, your father did? He told me you guys were fine and that you missed me. I was suspicious because I saw a ‘Missing’ poster and it happened to have four of you on it – your brother, your two sisters, and yourself the following day.”
+<br>
+       “WHAT?!?”
+       “I don’t need to repeat, or do I?”
+<br>
+       “I’m sorry. I-I just don’t like my father…He’s been different since a dictator emerged after the war my cousin Kane died in…”
+<br>
+       “I see. The same day I saw that poster, I saw your mother weeping in front of it. I walked up to her and tried to calm her down but she ignored me. Then, strangers came and hurled me at a tree. I was knocked out cold and the next thing I knew, I found Luna tending me. My spine was broken but she somehow was able to repair it. She took care of me ever since.”
+<br>
+       “Your parents, what happened to them?”
+<br>
+       “I’d rather not talk about it but…let’s just make it simple. They died the next day from a car accident. Both of them. To add onto my misery, I lost my little brother. He was no where. Luna called the police to search for him but after one week, they gave up.”
+<br>
+       Flipper got a glimpse of memory. His sister, whoever she was, died that very day the fire incinerated the house. Flipper attempted to recall anything that happened four years ago but he slipped into a dream instead.
+<p>
+[Dream]
+<p>
+       “Follow.” Naomi hopped along.
+<br>
+       Flipper did his best to catch up with her.
+<br>
+       “Come on!” Naomi turned around only to find Flipper far behind.
+<br>
+       “Sorry,” Flipper ran to her.
+<br>
+       “Right here.”
+<br>
+       “Right where?”
+<br>
+       “Here,” Naomi pointed to a gravestone.
+<br>
+       Flipper read out loud, “‘Here lies Rydra Zsuwaiki. 1932 – 1981.’ He’s dead.”
+<p>
+[End of Dream]
+<p>
+       “Stop napping, Flipper!” Shadow shouted, startling Flipper.
+<br>
+       “How long have I been dozing?” Flipper inquired, guessing a day had passed.
+<br>
+       “Look at the clock; it’s eight in the morning.”
+<br>
+       “Oh my god! I almost forgot about the contest!”
+<br>
+       “Contest?”
+<br>
+       “I better get going.”
+<br>
+       Shadow got in Flipper’s way. “You’re not going until you have breakfast.”
+<br>
+       “Top of the morning, Shadow and Flipper,” Luna greeted. “Come out now, Akira.”
+<br>
+       The girl, Akira, appeared before them. “‘Ello.”
+<br>
+       “Akira?” Flipper raised a brow. She seemed familiar but Flipper couldn’t understand that feeling.
+<br>
+       “She claims that as her name. She doesn’t have a good memory she says,” Luna explained. “Akira, meet Flipper and Shadow. Flipper and Shadow, Akira.”
+<br>
+       “Where’s Justin?” Shadow questioned, changing the subject.
+<br>
+       “I saw him go out,” Akira replied, going up to Flipper. “You seem familiar, do I know you?”
+<br>
+       Dumbfounded, Flipper ignored her. Akira moved on, anyhow.
+<br>
+       Flipper headed to the door, “Anyway, I have a contest to attend to.” 
+<br>
+       But before Shadow could stop him, Flipper was already gone. “I wonder what’s so special about this contest.”
+<br>
+       “It’s a trap!” Akira blurted. “The pursuers were talking about it. I was hiding and eavesdropping…but they caught me.”
+<br>
+       “It’s best if we’re off now.”
+<br>
+       Luna nodded, “Take care, Shadow. Akira, you’re staying with me. You haven’t fully recovered.”
+<br>
+       Akira was about to protest but Shadow interrupted her. “Akira can come with me. I suppose Justin was heading over there.”
+<br>
+       “Shadow, her injuries still need to be tended.”
+<br>
+       “It’s alright. I got her back.” Shadow and Akira disappeared through the doorway.
+<br>
+       “Shadow…” Luna mumbled, watching them go.
+<p>
+~
+<p>
+       “The challenge is simple. First one to kill two hundred of these ribbon-pigs wins 300,000 mesos and will be awarded with one choice of the selected prizes. Oh, I almost forgot. There will be a final opposition – the death labyrinth – and it will determine the winner. In addition, it is timed.” the competition host announced. “All volunteers step forward. The first four to stand will compete in the games.” 
+<br>
+       Flipper rose from his seat. Only four could compete and Flipper intended to be one of them. 
+<br>
+       “I, Justin, have made my choice to compete.” His voice sounded triumphant. 
+<br>
+       Flipper took a glance at Justin. “Same as I.”
+<br>
+       Two others stood from their seats. One was a female and the other a male. The audience was small; it appeared as if the contest flyer didn’t catch much attention.
+<p>
+~
+<p>
+       Meanwhile, Shadow and Akira were completely lost.
+<br> 
+       “Maybe we should ask, Shadow,” Akira suggested.
+<br>
+       “Nah, we should be able to find the place in no time,” Shadow shrugged. “After all, it’s in Kerning City, right?”
+<br>
+       “Don’t look at me! I don’t know where it is!” Akira exclaimed, then she muttered something to herself, “Even though I listened to the conversation…” She sighed, taking the path to Henesys.
+<br>
+       “Where do you think you’re going?” Shadow questioned. “It’s in Kerning all right!?”
+<br>
+       “More like Henesys, I believe. We’re better off going there.”
+<br>
+       “Whatever.”
+<p>
+~
+<p>
+       Back at the games, Flipper looked at the scores. He had only slaughtered 89. Justin was leading with 109 kills. The other two’s scores were below Flipper’s but were gaining more by the second. How am I going to win at this rate? He thought.
+<br>
+       “Come on Flipper! Don’t tell me you’re sluggish as a snail!” Justin taunted.
+<br>
+       “Shut up!” Flipper glared. He remembered something, a technique that he had learned in the past years. As he loosened his grip on his arrow, Flipper aimed his arrow at the pigs. It stiffened and hurled toward them – all six of them.
+<br>
+       “Nice,” Justin smiled. “Look at the time, it’s almost over.”
+<br>
+       When Flipper looked at the scores, it seemed as if he had been dozing for a while. The other two had already surpassed Flipper, and there were only nineteen minutes left. 
+<p>
+~
+<p>
+       “Don’t tell me we’re lost!” Shadow snapped, dangling from a rope. “We’re supposed to find Flipper and Justin! Great!”
+<br>
+       “Got a map?” Akira inquired, hanging on a rope beside the other one.
+<br>
+       “…” Shadow took out his map and tossed on the ground. 
+<br>
+       “You want me killed, don’t you? Don’t drop it where the monsters are!!”
+<br>
+       “This doesn’t help at all. We’re surrounded.”
+<br>
+       “Why don’t you just kill them so we can get out of here, Shadow?!”
+<br>
+       Shadow heaved a sigh. “Got any energy potions? My magic needs time to recuperate.”
+<br>
+       “Wow, you’re in luck.”
+<p>
+~
+<p>
+       Already in fatigue, Flipper was about to surrender his chance to win until he decided that he would never let his family down. Only thirty-one more and I have less than five minutes. 
+<br>
+       Justin leaned over the ladder, victorious. He had already slain 300 before the deadline; he knew he would be moving onto the next stage.
+<br>
+       As for the male and the female, they had fallen behind Flipper; luckily, for him. However, they were catching up for a second time.
+<p>
+~
+<p>
+       “Thank god,” Shadow summoned his chair and rested on it. 
+<br>
+       “Flipper and Justin might be in trouble! Don’t just park yourself there!” Akira cried.
+<br>
+       “Yes, I know but don’t you see I need to rest?”
+<br>
+       In disappointment, Akira glowered at him.
+<br>
+       “All right, all right!” Shadow’s hand slipped down his face as if his was swiping off his sweat. Ladies like her scare me. “Since you have the directions, you lead the way.” Shadow was feeling lazy.
+<p>
+*               *                 *
+<p>
+       “Are we there yet?” Shadow whined, sounding like a complete, immature six year old. His stomach grumbled. “Drat, I forgot breakfast.”
+<br>
+       “Here,” Akira tossed an apple to Shadow. 
+<br>
+       Astonished, Shadow nibbled from the apple. “My thanks. How…Where did you get this apple?” He was embarrassed when he asked, for he was a mage himself.
+<br>
+       “So how do you like the taste of my magic?”
+<br>
+       Shadow chuckled, “Ha-ha.”
+<p>
+*               *                 *
+<p>
+       Henesys greeted them with a friendly comfort. A cool breeze passed by Shadow and Akira. All they had to do was to find someone who knew where the contest was taking place. Eventually, they found a guy dressed in a black uniform with a Pickpocket Plifer. 
+<br>
+       “Good afternoon. How may I help you? Garu at your assistance.” He seemed quite welcoming. 
+<br>
+       “Have you seen a boy around the age fourteen garbed in fine clothing?” Shadow inquired. “His name is Flipper.”
+<br>
+       “You left out Justin, Shadow,” Akira added.
+<br>
+       Garu shook his head. “Sorry, I haven’t.”
+<br>
+       “The contest, where is it?” Shadow hoped Garu would know.
+<br>
+       Garu answered, “Well, the preliminary already ended. They should be at the finale – the death maze. I heard two boys made it and you already mentioned them.”
+<br>
+       Shadow and Akira were astounded. “WHAT?!” They both shouted.
+<br>
+       “The death maze is exactly what it sounds like,” Garu shrugged. “Their lives are at stake. The starting point – for the death maze – was in Kerning City. What can I say? That’s what I heard.”
+<br>
+       “Let’s move it,” Shadow gestured. “Greeaat, back to Kerning City.”
+<br>
+       Akira nodded. “If only we knew.”
+<br>
+       “Well, I was glad for being at your service,” Garu smiled and then, walked away.
+<p>
+
+       Not far away from where they were, their little greeter watched them from above. “Flipper’s friends are in Henesys, heading to Kerning City Subway – the place where the death labyrinth began.” Garu seemed as if he was talking to himself but he wasn’t. “Don’t let them get away.” He vanished.
+<p>
+       “Akira, we got company,” Shadow stated. His wand and shield appeared in hands. “Stay back.”
+       Before them, there stood a small group of enemies. 
+       “You’re not going anywhere and don’t think of saving your friends either!” one of them bellowed.
+       Shadow stood in a fighting stance and hissed, “Oh, really!”
+<p>
+~
+<p>
+       Hiding within the shadows, two followers eyed Flipper closely. 
+<br>
+       “That’s him all right,” one of them whispered. “We got him where we want. Things are going according to plan.”
+<p>
+       That’s when Flipper knew something was wrong. “I think we’ve been set up,” he murmured, stopping dead in his tracks, to Justin.
+<br>
+       “What did you say?” Justin was bewildered. “What do you mean? This was all a trap?!”
+<br>
+       Flipper felt a presence of something or someone nearby. He no longer felt comfortable. All he knew were two things: he had fallen into a trap. And it was because of his own ignorance.
+
+
+
+              </div>
+            <table width="100%"  border="0" cellpadding="0">
+              <tr>
+                <td width="33%"><div align="center">               </tr>
+            </table>
+            <br>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+    </tr>
+
+
+  </table>
+<table width="784" border="0" cellpadding="0" bordercolor="#000000" bgcolor="#000000">
+    <tr bgcolor="#000000">
+      <td colspan="2">
+      </object></td>
+    </tr>
+    <tr>
+<center><td width="784" bgcolor="#000000"><div align="center"><font color="white"><Span class="TopLinks"><marquee behavior="alternate"><marquee width=100>©2007 SacredHeros, the Scanian MapleStory Guild. All rights reserved. :)</font></marquee></Span></div></td></center> </tr>
+</table>
+
+</div>
+</body>
+
+
+<style>a{color:white;font:10pt Comic Sans MS;text-decoration:none}</style>
+<style>body{background:url(http://img267.imageshack.us/img267/1633/sacredherosii0.png) fixed no-repeat center}</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
